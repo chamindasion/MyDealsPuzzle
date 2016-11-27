@@ -1,0 +1,4 @@
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Utilities\bin\Debug\MD.Puzzle.Utilities.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Utilities\bin\Debug\MD.Puzzle.Utilities.pdb
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Utilities\obj\Debug\MD.Puzzle.Utilities.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Utilities\obj\Debug\MD.Puzzle.Utilities.pdb

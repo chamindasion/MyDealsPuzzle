@@ -1,0 +1,121 @@
+﻿<script type="text/javascript">
+
+    var apiUrl = "http://localhost:54673/api";
+
+    $(document).ready(function () {         
+
+         $.support.cors = true;
+         
+         var refreshLocators = function () {
+
+             $("#locatorList").html("");
+
+             $.ajax({
+                 url: apiUrl + "/recordlocators?searchCriteria=" + encodeURI($('#txtSearchText').val()),
+                 dataType: 'json',
+                 success: function (data) {
+                     $.each(data, function (key, val) {
+                         $('<li/>', { text: val.name })
+                             .appendTo($('#locatorList'));
+
+                         $.each(val.passengers, function (key1, val1) {
+                             $('<li/>', { text: val1.firstName + '/' + val1.lastName })
+                                 .appendTo($('#locatorList'));
+                         });
+                     });
+                 },
+                 error: function (data) {
+                     console.log("ERROR:  " + data);
+                 }
+             });
+         };
+
+
+        $(function() {
+            $("#btnSearch").click(function() {
+                refreshLocators();
+            });
+        });
+
+        $(function() {
+            $("#btnAddPassenger").click(function() {
+                var passenger = new Object();
+                passenger.firstName = $('#txtFirstName').val();
+                passenger.lastName = $('#txtLastName').val();
+                passenger.recordLocatorName = $('#txtRecordLocator').val();
+
+                $.ajax({
+                    url: apiUrl + '/passengers',
+                    type: 'POST',
+                    dataType: 'json',
+                    contentType: "application/json;charset=utf-8",
+                    data: JSON.stringify(passenger),
+                    success: function() {
+                        refreshLocators();
+                        $('#txtFirstName').val('');
+                        $('#txtLastName').val('');
+                        $('#txtRecordLocator').val('');
+                    },
+                    error: function(data) {
+                        console.log("ERROR:  " + data);
+                    }
+                });
+            });
+        });
+        
+        $(document).one('ready', function () {            
+            refreshLocators();
+        });
+    });
+ </script>
+<section>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">Search by Record Locator or Passenger</div>
+            
+            <div class="input-group">
+                <span class="input-group-addon">Search Criteria</span>                
+                <input id="txtSearchText" type="text" class="form-control" placeholder="Enter hint for Record locator or passenger">
+                <span class="input-group-btn">
+                <button id="btnSearch" class="btn btn-default" type="submit">Search</button>
+                </span>                                   
+                </div>            
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Record Locators with Passenger</div>
+            <table class="table">
+                <tr>
+                    <td>
+                        <ul id="locatorList" class="list-group" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Adding New Passenger</div>
+            
+                <div class="input-group">
+                    <span class="input-group-addon">First Name</span>
+                    <input id="txtFirstName" type="text" class="form-control" placeholder="Enter First Name">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Last Name</span>
+                    <input id="txtLastName" type="text" class="form-control" placeholder="Enter Last Name">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Locator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <input id="txtRecordLocator" type="text" class="form-control"placeholder="Enter Locator">
+                </div>
+                <br>
+                <div>
+                    <!--<button id="btnAddPassenger">Add Passenger</button>-->
+                    <span class="input-group-btn">
+                        <button id="btnAddPassenger" class="btn btn-default" type="submit">Add Passenger</button>
+                    </span>                                   
+                </div>
+                       
+        </div>
+    </div>
+</section>
+

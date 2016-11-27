@@ -1,0 +1,14 @@
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Data.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Data.pdb
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Data.Contracts.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Models.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Utilities.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Data.Contracts.pdb
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Models.pdb
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\MD.Puzzle.Utilities.pdb
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\Omu.ValueInjecter.pdb
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\obj\Debug\MD.Puzzle.Data.csprojResolveAssemblyReference.cache
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\obj\Debug\MD.Puzzle.Data.dll
+C:\Chamindah\InterviewExams\MyDeals\MyDealsSolution\Server\Core\MD.Puzzle.Data\obj\Debug\MD.Puzzle.Data.pdb

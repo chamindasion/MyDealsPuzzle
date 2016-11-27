@@ -1,0 +1,49 @@
+# --------------------
+
+# Ignore Visual Studio  Project 
+#
+# --------------------
+
+*.user
+
+*.suo
+
+/packages
+
+# --------------------
+
+# bin 
+#
+# --------------------
+
+MD.Puzzle.Client/bin
+
+MD.Puzzle.Client/obj
+
+MD.Puzzle.API/bin
+
+MD.Puzzle.API/obj
+
+MD.Puzzle.Data/bin
+
+MD.Puzzle.Data/obj
+
+MD.Puzzle.Data.Contracts/bin
+
+MD.Puzzle.Data.Contracts/obj
+
+MD.Puzzle.Models/bin
+
+MD.Puzzle.Models/obj
+
+MD.Puzzle.Service/bin
+
+MD.Puzzle.Service/obj
+
+MD.Puzzle.Service.Contracts/bin
+
+MD.Puzzle.Service.Contracts/obj
+
+MD.Puzzle.Utilities/bin
+
+MD.Puzzle.Utilities/obj
